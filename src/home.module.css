@@ -245,14 +245,56 @@
 }
 
 
+/* ------SCROLL BAR -------------- */
+.patient_list::-webkit-scrollbar {
+    width: 6px;
+    height: 100px; 
+}
 
+.patient_list::-webkit-scrollbar-track {
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.patient_list::-webkit-scrollbar-thumb {
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box; 
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; 
+}
+
+.patient_list::-webkit-scrollbar-thumb:hover {
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box; 
+}
+
+.patient_list::-webkit-scrollbar-corner {
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box;
+}
+
+.patient_list::-webkit-scrollbar-corner {
+    background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background: #072635 0% 0% no-repeat padding-box;
+}
+
+/* Custom Scrollbar Styles for Firefox */
+.patient_list {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #072635 0% 0% no-repeat padding-box;
+    /* background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+    background:  */
+}
 
 
 @media (max-width: 1024px) {
     .patient_list_con {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-        column-gap: 2em; /* Adjust column gap for better spacing */
-        row-gap: 2em; /* Add row gap for spacing between items */
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 2em; 
+        row-gap: 2em; 
     }
 }
 
